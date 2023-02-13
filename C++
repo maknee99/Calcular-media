@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num, numInt, suma=0, media;
+    cout << "Ingrese cuantos numeros quiere ingresar ";
+    cin >> num;
+    if(num > 0){
+        for(int i = 0; i < num; i++)
+        {
+        cout << "Ingrese el numero numero: ";
+        cin >> numInt;
+        suma += numInt;
+        }
+        media = suma / num;
+        cout << "El promedio de los numeros es :" << media << endl;
+    } else {
+        cout << "Debe ingresar al menos un número para calcular la media.\n";
+    }
+    
+    return 0;
+}
